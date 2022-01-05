@@ -9,7 +9,6 @@ public class Main_1110_cycle {
 		
 		int n, new_num, cycle=0;
 		int sip=0, ill=0, sum = 0;
-		int new_sip, new_ill;
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
 		new_num = n;

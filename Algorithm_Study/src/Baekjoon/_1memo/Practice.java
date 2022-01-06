@@ -1,15 +1,22 @@
 package Baekjoon._1memo;
 
-import java.util.Scanner;
-
+class Employee{
+	String name="Hello~";
+	public String toString() {return name;}
+	
+}
 public class Practice {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int i = 4, j = 7;
+		Employee e = new Employee();
+		System.out.println(e);
 		
-		System.out.println(i +" " + j);
 
 	}
 
 }
+
+	
+
+

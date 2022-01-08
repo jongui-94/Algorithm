@@ -7,22 +7,33 @@ public class Main_3052_rest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a, b, rest, divide = 42;
+		int a, rest;
+		boolean check = true;
+		int count =0;
 		
 		int arr[] = new int[10];
+	
 		
 		Scanner sc = new Scanner(System.in);
 		
-		for(int i = 0; i<10;i++)
+		for(int i=0;i<10;i++)
 		{
-			a = sc.nextInt();
-			rest = a % 42;
-			arr[i] = rest;
+			arr[i] = (sc.nextInt()%42);
 		}
-		for(int i: arr)
+		for(int j=0;j<10;j++)
 		{
-			
+			check = true;
+			for(int k=j+1;k<10;k++)
+			{
+				if(arr[j]==arr[k] )
+					check = false;
+			}
+			if(check == true)
+				count +=1;
 		}
+		System.out.println(count);
+		
+		
 
 	}
 

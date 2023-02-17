@@ -31,7 +31,7 @@ public class Main7562 {
                 visited[newX][newY] = true;
                 arr[newX][newY] = arr[a.x][a.y] +1;
                 if(newX == goal.x && newY == goal.y) {
-                    break;
+                    return;
                 }
             }
         }
@@ -44,11 +44,7 @@ public class Main7562 {
             n = Integer.parseInt(br.readLine());
             arr = new int[n][n];
             visited = new boolean[n][n];
-            for(int j=0;j<n;j++){
-                for(int k=0;k<n;k++) {
-                    arr[i][j] = 0;
-                }
-            }
+
 
             StringTokenizer st = new StringTokenizer(br.readLine());
             int x = Integer.parseInt(st.nextToken());
